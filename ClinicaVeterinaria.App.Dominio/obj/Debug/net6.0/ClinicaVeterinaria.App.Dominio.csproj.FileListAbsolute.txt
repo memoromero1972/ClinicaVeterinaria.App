@@ -1,0 +1,12 @@
+C:\clinica\ClinicaVeterinaria.App\ClinicaVeterinaria.App.Dominio\bin\Debug\net6.0\ClinicaVeterinaria.App.Dominio.deps.json
+C:\clinica\ClinicaVeterinaria.App\ClinicaVeterinaria.App.Dominio\bin\Debug\net6.0\ClinicaVeterinaria.App.Dominio.dll
+C:\clinica\ClinicaVeterinaria.App\ClinicaVeterinaria.App.Dominio\bin\Debug\net6.0\ClinicaVeterinaria.App.Dominio.pdb
+C:\clinica\ClinicaVeterinaria.App\ClinicaVeterinaria.App.Dominio\obj\Debug\net6.0\ClinicaVeterinaria.App.Dominio.csproj.AssemblyReference.cache
+C:\clinica\ClinicaVeterinaria.App\ClinicaVeterinaria.App.Dominio\obj\Debug\net6.0\ClinicaVeterinaria.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\clinica\ClinicaVeterinaria.App\ClinicaVeterinaria.App.Dominio\obj\Debug\net6.0\ClinicaVeterinaria.App.Dominio.AssemblyInfoInputs.cache
+C:\clinica\ClinicaVeterinaria.App\ClinicaVeterinaria.App.Dominio\obj\Debug\net6.0\ClinicaVeterinaria.App.Dominio.AssemblyInfo.cs
+C:\clinica\ClinicaVeterinaria.App\ClinicaVeterinaria.App.Dominio\obj\Debug\net6.0\ClinicaVeterinaria.App.Dominio.csproj.CoreCompileInputs.cache
+C:\clinica\ClinicaVeterinaria.App\ClinicaVeterinaria.App.Dominio\obj\Debug\net6.0\ClinicaVeterinaria.App.Dominio.dll
+C:\clinica\ClinicaVeterinaria.App\ClinicaVeterinaria.App.Dominio\obj\Debug\net6.0\refint\ClinicaVeterinaria.App.Dominio.dll
+C:\clinica\ClinicaVeterinaria.App\ClinicaVeterinaria.App.Dominio\obj\Debug\net6.0\ClinicaVeterinaria.App.Dominio.pdb
+C:\clinica\ClinicaVeterinaria.App\ClinicaVeterinaria.App.Dominio\obj\Debug\net6.0\ref\ClinicaVeterinaria.App.Dominio.dll
