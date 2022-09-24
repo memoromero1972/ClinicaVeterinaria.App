@@ -1,0 +1,85 @@
+﻿@page
+@model ClinicaVeterinaria.App.Presentacion.Pages.RegistroPropietarioModel
+@{
+}
+<html>
+
+<head>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div>
+        <h1> Registro Propietario</h1>
+        <form method="post">
+            <table class="table">
+                <tr>
+                    <div>
+                        <td width="250">
+                            <label asp-for="propietario.DocIdentidad" class="from-label">Documento Id.:</label>
+                        </td>
+                        <td><input asp-for="propietario.DocIdentidad" class="from-control" />
+                            <span asp-validation-for="propietario.DocIdentidad" class="text-danger"></span>
+                        </td>
+                    </div>
+                </tr>
+                <br>
+                <tr>
+                    <div>
+                        <td width="250"><label asp-for="propietario.Nombre" class="from-label">Nombres Propietario:
+                            </label></td>
+                        <td><input asp-for="propietario.Nombre" class="from-control" />
+                            <span asp-validation-for="propietario.Nombre" class="text-danger"></span>
+                        </td>
+                    </div>
+                </tr>
+                <br>
+                <tr>
+                    <div>
+                        <td width="250"><label asp-for="propietario.Apellidos" class="from-label">Apellidos Propietario:
+                            </label></td>
+                        <td><input asp-for="propietario.Apellidos" class="from-control" />
+                            <span asp-validation-for="propietario.Apellidos" class="text-danger"></span>
+                        </td>
+                    </div>
+                </tr>
+                <br>
+                <tr>
+                    <div>
+                        <td width="250"><label asp-for="propietario.Direccion" class="from-label">Direccion:
+                            </label></td>
+                        <td><input asp-for="propietario.Direccion" class="from-control" />
+                            <span asp-validation-for="propietario.Direccion" class="text-danger"></span>
+                        </td>
+                    </div>
+                </tr>
+                <br>
+                <tr>
+                    <div>
+                        <td width="250"><label asp-for="propietario.Telefono" class="from-label">Telefono:
+                            </label></td>
+                        <td><input asp-for="propietario.Telefono" class="from-control" />
+                            <span asp-validation-for="propietario.Telefono" class="text-danger"></span>
+                        </td>
+                    </div>
+                </tr>
+                <br>
+                <tr>
+                <div>
+                    <td width="250"><label asp-for="propietario.Correo_Electronico" class="from-label">e-mail:
+                        </label></td>
+                    <td><input asp-for="propietario.Correo_Electronico" class="from-control" />
+                        <span asp-validation-for="propietario.Correo_Electronico" class="text-danger"></span>
+                    </td>
+                </div>
+                </tr>
+                <br>
+
+
+            </table>
+            <td><button type="submit" class="btn btn-primary">Grabar</button></td>
+        </form>
+    </div>
+</body>
+
+</html>

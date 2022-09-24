@@ -1,0 +1,85 @@
+﻿@page
+@model ClinicaVeterinaria.App.Presentacion.Pages.RegistroVeterinarioModel
+@{
+}
+<html>
+
+<head>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div>
+        <h1> Registro Veterinario</h1>
+        <form method="post">
+            <table class="table">
+                <tr>
+                    <div>
+                        <td width="250">
+                            <label asp-for="veterinario.DocIdentidad" class="from-label">Documento Id.:</label>
+                        </td>
+                        <td><input asp-for="veterinario.DocIdentidad" class="from-control" />
+                            <span asp-validation-for="veterinario.DocIdentidad" class="text-danger"></span>
+                        </td>
+                    </div>
+                </tr>
+                <br>
+                <tr>
+                    <div>
+                        <td width="250"><label asp-for="veterinario.Nombre" class="from-label">Nombres Veterinario:
+                            </label></td>
+                        <td><input asp-for="veterinario.Nombre" class="from-control" />
+                            <span asp-validation-for="veterinario.Nombre" class="text-danger"></span>
+                        </td>
+                    </div>
+                </tr>
+                <br>
+                <tr>
+                    <div>
+                        <td width="250"><label asp-for="veterinario.Apellidos" class="from-label">Apellidos Propietario:
+                            </label></td>
+                        <td><input asp-for="veterinario.Apellidos" class="from-control" />
+                            <span asp-validation-for="veterinario.Apellidos" class="text-danger"></span>
+                        </td>
+                    </div>
+                </tr>
+                <br>
+                <tr>
+                    <div>
+                        <td width="250"><label asp-for="veterinario.Direccion" class="from-label">Direccion:
+                            </label></td>
+                        <td><input asp-for="veterinario.Direccion" class="from-control" />
+                            <span asp-validation-for="veterinario.Direccion" class="text-danger"></span>
+                        </td>
+                    </div>
+                </tr>
+                <br>
+                <tr>
+                    <div>
+                        <td width="250"><label asp-for="veterinario.Telefono" class="from-label">Telefono:
+                            </label></td>
+                        <td><input asp-for="veterinario.Telefono" class="from-control" />
+                            <span asp-validation-for="veterinario.Telefono" class="text-danger"></span>
+                        </td>
+                    </div>
+                </tr>
+                <br>
+                <tr>
+                <div>
+                    <td width="250"><label asp-for="veterinario.TarjetaProf" class="from-label">Tarjeta Profesional:
+                        </label></td>
+                    <td><input asp-for="veterinario.TarjetaProf" class="from-control" />
+                        <span asp-validation-for="veterinario.TarjetaProf" class="text-danger"></span>
+                    </td>
+                </div>
+                </tr>
+                <br>
+
+
+            </table>
+            <td><button type="submit" class="btn btn-primary">Grabar</button></td>
+        </form>
+    </div>
+</body>
+
+</html>

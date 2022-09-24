@@ -1,0 +1,75 @@
+﻿@page
+@model ClinicaVeterinaria.App.Presentacion.Pages.listaAnimalModel
+@{
+}
+<html>
+
+<head>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+    <h1> Consulta de Animales</h1>
+
+    <a class="btn btn-primary table-btn" asp-page="/Menuopciones/RegistroAnimal" asp-route-idcaballo="">Adicionar Animal
+        <i class="fas fa-info-circle fa-lg" aria-hidden="true"></i>
+    </a>
+
+    <table class="table">
+        <tr>
+            <td>
+                <h4>Nombre del Animal</h4>
+            </td>
+            <td>
+                <h4>Detalles</h4>
+            </td>
+            <td>
+                <h4>Color</h4>
+            </td>
+            <td>
+                <h4>Especie</h4>
+            </td>
+            <td>
+                <h4>Raza</h4>
+            </td>
+            <td>
+                <h4>Acciones</h4>
+            </td>
+        </tr>
+        @foreach (var c in Model.caballolista)
+        {
+            <tr>
+                <td>
+                    @c.Nombre_Caballo
+                </td>
+                <td>
+                    <a class="btn btn-primary table-btn" asp-page="/Listados/ConsulUnitariaAnim" asp-route-idcaballo="@c.Id">Detalles
+                        <i class="fas fa-info-circle fa-lg" aria-hidden="true"></i>
+                    </a>
+                </td>
+                <td>
+                    @c.Color
+                </td>
+                <td>
+                    @c.Especie
+                </td>
+                <td>
+                    @c.Raza
+                </td>
+
+                <td>
+                    <div class="btn-group pl-5 pr-5" role="group" aria-label="Basic mixed styles example">
+                        <a class="btn btn-warning d-inline" asp-area="" asp-page="/Menuopciones/EditarAnimal" asp-route-idcaballo="@c.Id"><i
+                            class="fas fa-edit"></i> Editar</a>
+                        <a class="btn btn-danger d-inline" asp-area="" asp-page="/Menuopciones/EliminarAnimal"
+                        asp-route-idcaballo="@c.Id"><i class="fas fa-trash-alt"></i> Eliminar</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </table>
+
+
+</body>
+
+</html>

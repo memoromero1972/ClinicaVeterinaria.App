@@ -47,7 +47,7 @@ namespace ClinicaVeterinaria.App.Persistencia
             VeterinarioEncontrado.Apellidos=veterinario.Apellidos;
             VeterinarioEncontrado.Direccion=veterinario.Direccion;
             VeterinarioEncontrado.Telefono=veterinario.Telefono;
-            VeterinarioEncontrado.Num_Tarjeta_Profesional=veterinario.Num_Tarjeta_Profesional;
+            VeterinarioEncontrado.TarjetaProf=veterinario.TarjetaProf;
         
             _appContext.SaveChanges();
         }

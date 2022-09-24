@@ -2,6 +2,7 @@ using System.Collections.Generic;  //libreria donde se definen las interfaces
 using ClinicaVeterinaria.App.Dominio;
 using System.Linq;
 
+
 namespace ClinicaVeterinaria.App.Persistencia
 {
    public class RepositorioCaballo:IRepositorioCaballo

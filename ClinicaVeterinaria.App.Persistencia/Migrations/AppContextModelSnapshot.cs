@@ -80,14 +80,11 @@ namespace ClinicaVeterinaria.App.Persistencia.Migrations
                     b.Property<string>("DocIdentidad")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Id_Caballo")
-                        .HasColumnType("int");
-
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Telefono")
-                        .HasColumnType("int");
+                    b.Property<string>("Telefono")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -164,8 +161,8 @@ namespace ClinicaVeterinaria.App.Persistencia.Migrations
                 {
                     b.HasBaseType("ClinicaVeterinaria.App.Dominio.Persona");
 
-                    b.Property<int>("Num_Tarjeta_Profesional")
-                        .HasColumnType("int");
+                    b.Property<string>("TarjetaProf")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasDiscriminator().HasValue("Veterinario");
                 });

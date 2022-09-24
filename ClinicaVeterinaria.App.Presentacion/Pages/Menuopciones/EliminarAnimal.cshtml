@@ -1,0 +1,56 @@
+﻿@page
+@model ClinicaVeterinaria.App.Presentacion.Pages.EliminarAnimalModel
+@{
+}
+<html>
+
+<head>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+    <Div>
+        <h1> Eliminar Datos Animal</h1>
+        <form method="post">
+            <input type="hidden" asp-for="caballo.Id"/>
+            <table class="table">
+                <tr>
+                    <div>
+                        <td width="250"><label asp-for="caballo.Nombre_Caballo" class="from-label">Nombre del Animal: </label></td>
+                        <td><input asp-for="caballo.Nombre_Caballo" class="from-control" />
+                            <span asp-validation-for="caballo.Nombre_Caballo" class="text-danger"></span>
+                        </td>
+                    </div>
+                </tr>
+                <br>
+                <tr>
+                    <td><label asp-for="caballo.Color" class="from-label">Color: </label></td>
+                    <td><input asp-for="caballo.Color" class="from-control" />
+                        <span asp-validation-for="caballo.Color" class="text-danger"></span>
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td><label asp-for="caballo.Especie" class="from-label">Especie: </label></td>
+                    <td><input asp-for="caballo.Especie" class="from-control" />
+                        <span asp-validation-for="caballo.Especie" class="text-danger"></span>
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td><label asp-for="caballo.Raza" class="from-label">Raza: </label></td>
+                    <td><input asp-for="caballo.Raza" class="from-control" />
+                        <span asp-validation-for="caballo.Raza" class="text-danger"></span>
+                    </td>
+                </tr>
+                <br> 
+
+            </table>
+            <td><button type="submit" class="btn btn-primary"> Eliminar </button></td>
+            <br>
+            <a asp-page="/Listados/listaAnimal" class ="btn-default">Volver a la lista de Animales</a>
+        </form>
+    </Div>
+</body>
+
+</html>
